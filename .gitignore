@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+!automations.yaml
+!configuration.yaml
+!customize.yaml
+!groups.yaml
+!scripts.yaml
+!sensors.yaml

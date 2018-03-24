@@ -1,0 +1,17 @@
+  - platform: ups
+    username: !secret email
+    password: !secret pass
+  - platform: fedex
+    username: !secret fedex_user
+    password: !secret pass
+  - platform: pi_hole
+    host: !secret pihole_ip
+    monitored_conditions:
+      - ads_blocked_today
+      - ads_percentage_today
+      - dns_queries_today
+  - platform: template
+    sensors:
+      template_mal_calendar:
+        friendly_name: Next Event
+        value_template: '{{ states.calendar.malloryquaintancegmailcom.attributes.message }}'

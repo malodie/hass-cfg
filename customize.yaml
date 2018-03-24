@@ -1,0 +1,21 @@
+configurator.philips_hue:
+  hidden: true
+switch.morty_schedule:
+  hidden: true
+sensor.pihole_ads_blocked_today:
+  friendly_name: Ads Blocked Today
+sensor.pihole_ads_percentage_blocked_today:
+  friendly_name: Percentage Blocked Today
+sensor.pihole_dns_queries_today:
+  friendly_name: DNS Queries Today
+group.pihole:
+  entity_id:
+  - sensor.pihole_ads_blocked_today
+  - sensor.pihole_ads_percentage_blocked_today
+  - sensor.pihole_dns_queries_today
+  friendly_name: Pihole
+sensor.ups:
+  friendly_name: UPS
+group.mail: {}
+group.all_vacuum_cleaners:
+  friendly_name: Vacuums
