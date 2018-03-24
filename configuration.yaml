@@ -17,7 +17,7 @@ frontend:
 # config:
 http:
 # history:
-# logbook:
+logbook:
 
 # panel_iframe:
 #   configurator:
