@@ -14,9 +14,9 @@ homeassistant:
   customize: !include customize.yaml
 
 frontend:
-# config:
+config:
 http:
-# history:
+history:
 logbook:
 
 # panel_iframe:
