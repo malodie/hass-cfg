@@ -14,10 +14,10 @@ homeassistant:
   customize: !include customize.yaml
 
 frontend:
-config:
+# config:
 http:
-history:
-logbook:
+# history:
+# logbook:
 
 # panel_iframe:
 #   configurator:
