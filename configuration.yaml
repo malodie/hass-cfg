@@ -19,11 +19,15 @@ http:
 history:
 logbook:
 
-# panel_iframe:
-#   configurator:
-#     title: Configurator
-#     icon: mdi:wrench
-#     url: http://192.168.1.32:3218
+panel_custom:
+  -name:
+    title: Upcoming Events
+    icon: mdi:calendar
+    url: http://192.168.1.32:3218
+
+switch:
+  - platform: tplink
+    host: !secret kasa_ip
 
 weather:
   - platform: darksky
