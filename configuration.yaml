@@ -27,6 +27,7 @@ logbook:
 
 switch:
   - platform: tplink
+    name: String Lights
     host: !secret kasa_ip
     enable_leds: true
 
