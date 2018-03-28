@@ -12,4 +12,4 @@
   calendars_custom:
     name: Events
     entities:
-      - sensor.template_mal_calendar
+      - sensor.template_calendar_house
