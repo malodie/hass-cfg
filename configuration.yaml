@@ -28,6 +28,7 @@ logbook:
 switch:
   - platform: tplink
     host: !secret kasa_ip
+    enable_leds: true
 
 weather:
   - platform: darksky
