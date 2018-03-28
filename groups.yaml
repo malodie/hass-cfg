@@ -9,7 +9,6 @@
       - sensor.pihole_ads_blocked_today
       - sensor.pihole_ads_percentage_blocked_today
       - sensor.pihole_dns_queries_today
-      - sensor.pi_2
   calendars_custom:
     name: Events
     entities:
