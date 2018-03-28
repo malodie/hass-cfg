@@ -15,4 +15,5 @@
       - sensor.template_calendar_house
   pihole_custom:
     name: Pi 2 Status
+    entities:
       - sensor.template_pi_2
