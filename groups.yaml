@@ -13,3 +13,6 @@
     name: Events
     entities:
       - sensor.template_calendar_house
+  pihole_custom:
+    name: Pi 2 Status
+      - sensor.template_pi_2

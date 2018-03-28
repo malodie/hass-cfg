@@ -22,7 +22,7 @@
     sensors:
       template_pi_2:
          value_template: >
-           {{ states.sensor.pi_2.state }}
+           {{ states('sensor.pi_2') }}
          friendly_name: Status
          unit_of_measurement: ''
   - platform: command_line
