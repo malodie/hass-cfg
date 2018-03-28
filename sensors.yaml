@@ -12,6 +12,9 @@
       - dns_queries_today
   - platform: template
     sensors:
-      template_mal_calendar:
-        friendly_name: Next Event
-        value_template: '{{ states.calendar.malloryquaintancegmailcom.attributes.message }}'
+      template_calendar_house:
+         value_template: >
+           {{ strptime(states.calendar.malloryquaintancegmailcom.attributes.start_time, "%Y-%m-%d %H:%M:%S").strftime("%A, %B %d") }}:
+           {{ states.calendar.malloryquaintancegmailcom.attributes.message }}
+         friendly_name: Next task
+         unit_of_measurement: ''
