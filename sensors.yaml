@@ -18,3 +18,10 @@
            {{ states.calendar.malloryquaintancegmailcom.attributes.message }}
          friendly_name: Next
          unit_of_measurement: ''
+  - platform: command_line
+    command: ping -W 1 -c 1 192.168.1.22 > /dev/null 2>&1 && echo success || echo fail
+    device_class: connectivity
+    name: Pi 2
+    payload_on: "success"
+    payload_off: "fail"
+    scan_interval: 3600
