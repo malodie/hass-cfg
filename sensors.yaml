@@ -16,5 +16,5 @@
          value_template: >
            {{ strptime(states.calendar.malloryquaintancegmailcom.attributes.start_time, "%Y-%m-%d %H:%M:%S").strftime("%A, %B %d") }}:
            {{ states.calendar.malloryquaintancegmailcom.attributes.message }}
-         friendly_name: Next task
+         friendly_name: Next
          unit_of_measurement: ''
