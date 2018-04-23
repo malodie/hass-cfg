@@ -19,3 +19,10 @@ sensor.ups:
 group.mail: {}
 group.all_vacuum_cleaners:
   friendly_name: Vacuums
+group.calendars_custom:
+  icon: mdi:calendar
+sensor.template_mal_calendar:
+  icon: mdi:calendar
+calendar.malloryquaintancegmailcom: {}
+sensor.template_calendar_house:
+  icon: mdi:calendar
