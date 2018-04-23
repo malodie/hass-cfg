@@ -1,9 +1,6 @@
   - platform: ups
     username: !secret email
     password: !secret pass
-  - platform: fedex
-    username: !secret fedex_user
-    password: !secret pass
   - platform: pi_hole
     host: !secret pihole_ip
     monitored_conditions:
