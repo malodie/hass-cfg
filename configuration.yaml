@@ -18,6 +18,7 @@ config:
 http:
 history:
 logbook:
+cloud:
 
 # panel_custom:
 #   -name:
