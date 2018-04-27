@@ -46,10 +46,10 @@
         value_template: >
           {{states('sensor.weather_daily_high_temperature')|round(0)}}° {{states('sensor.weather_daily_low_temperature')|round(0)}}° {{states('sensor.weather_precip_probability')|round(0)}}%
         icon_template: >
-        {{states('sensor.weather_daily_summary.entity_picture')}}
+          {{states('sensor.weather_daily_summary.entity_picture')}}
       forecast_1:
         friendly_name: Tomorrow
         value_template: >
           {{states('sensor.weather_daily_high_temperature_1')|round(0)}}° {{states('sensor.weather_daily_low_temperature_1')|round(0)}}° {{states('sensor.weather_precip_probability_1')|round(0)}}%
         icon_template: >
-        {{states('sensor.weather_daily_summary.entity_picture')}}
+          {{states('sensor.weather_daily_summary.entity_picture')}}
