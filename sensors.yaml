@@ -48,9 +48,9 @@
       forecast_today:
         friendly_name: "Today's Forecast"
         value_template: >
-          {{states.sensor.dark_sky_daily_high_temperature.state|round(0)}}°/{{states.sensor.dark_sky_daily_low_temperature.state|round(0)}}°/{{states.sensor.dark_sky_precip_probability.state|round(0)}}%
+          {{states('sensor.weather_daily_high_temperature')|round(0)}}°/{{states('sensor.weather_daily_low_temperature')|round(0)}}°/{{states('sensor.weather_precip_probability')|round(0)}}%
 
       forecast_1:
         friendly_name: "Tomorrow"
         value_template: >
-          {{states.sensor.dark_sky_daily_high_temperature_1.state|round(0)}}°/{{states.sensor.dark_sky_daily_low_temperature_1.state|round(0)}}°/{{states.sensor.dark_sky_precip_probability_1.state|round(0)}}%
+          {{states('sensor.weather_daily_high_temperature_1')|round(0)}}°/{{states('sensor.weather_daily_low_temperature_1')|round(0)}}°/{{states('sensor.weather_precip_probability_1')|round(0)}}%
