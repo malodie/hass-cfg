@@ -17,3 +17,14 @@
     name: Pi 2 Status
     entities:
       - sensor.template_pi_2
+  weather_card_forecast:
+    name: Forecast
+    view: no
+    icon: mdi:sun
+    entities:
+      - sensor.forecast_0
+      - sensor.forecast_1
+      - sensor.forecast_2
+      - sensor.forecast_3
+      - sensor.forecast_4
+      - sensor.forecast_5
