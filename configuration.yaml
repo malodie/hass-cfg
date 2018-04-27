@@ -32,12 +32,7 @@ switch:
     host: !secret kasa_ip
     enable_leds: true
 
-weather:
-  - platform: darksky
-    api_key: !secret darksky_api
-    units: us
-    name: Weather
-    update_interval: 300
+weather: !include weather.yaml
 
 google:
   client_id: !secret google_id
