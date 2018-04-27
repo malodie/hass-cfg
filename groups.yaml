@@ -17,12 +17,18 @@
     name: Pi 2 Status
     entities:
       - sensor.template_pi_2
+  weather_card_today:
+    name: Today
+    view: no
+    entities:
+      - sensor.forecast_today
+      - sensor.dark_sky_temperature
+      - sensor.dark_sky_humidity
   weather_card_forecast:
     name: Forecast
     view: no
-    icon: mdi:sun
     entities:
-      - sensor.forecast_0
+      - sensor.dark_sky_daily_summary
       - sensor.forecast_1
       - sensor.forecast_2
       - sensor.forecast_3
