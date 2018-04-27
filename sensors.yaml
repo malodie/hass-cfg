@@ -42,16 +42,16 @@
   - platform: template
     sensors:
       forecast_today:
-        friendly_name: Forecast Today
+        friendly_name: Today
         value_template: >
           {{states('sensor.weather_daily_high_temperature')|round(0)}}° {{states('sensor.weather_daily_low_temperature')|round(0)}}° {{states('sensor.weather_precip_probability')|round(0)}}%
           {{states('sensor.weather_humidity')}}
-        icon_template: >
-          {{states('sensor.weather_icon')}}
+        icon_template: >-
+          mdi:weather-{{states('sensor.weather_icon')}}
       forecast_1:
-        friendly_name: Forecast Tomorrow
+        friendly_name: Tomorrow
         value_template: >
           {{states('sensor.weather_daily_high_temperature_1')|round(0)}}° {{states('sensor.weather_daily_low_temperature_1')|round(0)}}° {{states('sensor.weather_precip_probability_1')|round(0)}}%
           {{states('sensor.weather_humidity_1')}}
-        icon_template: >
-          {{states('sensor.weather_icon_1')}}
+        icon_template: >-
+          mdi:weather-{{states('sensor.weather_icon_1')}}
