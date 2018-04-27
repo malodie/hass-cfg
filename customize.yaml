@@ -26,3 +26,5 @@ sensor.template_mal_calendar:
 calendar.malloryquaintancegmailcom: {}
 sensor.template_calendar_house:
   icon: mdi:calendar
+sensor.weather_card_forecast:
+  friendly_name: Forecast
