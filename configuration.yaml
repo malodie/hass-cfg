@@ -32,8 +32,6 @@ switch:
     host: !secret kasa_ip
     enable_leds: true
 
-weather: !include weather.yaml
-
 google:
   client_id: !secret google_id
   client_secret: !secret google_secret
