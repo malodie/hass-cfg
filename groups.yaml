@@ -28,9 +28,5 @@
     name: Forecast
     view: no
     entities:
-      - sensor.dark_sky_daily_summary
+      - sensor.forecast_today
       - sensor.forecast_1
-      - sensor.forecast_2
-      - sensor.forecast_3
-      - sensor.forecast_4
-      - sensor.forecast_5
