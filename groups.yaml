@@ -17,15 +17,8 @@
     name: Pi 2 Status
     entities:
       - sensor.template_pi_2
-  weather_card_today:
-    name: Today
-    view: no
-    entities:
-      - sensor.forecast_today
-      - sensor.dark_sky_temperature
-      - sensor.dark_sky_humidity
   weather_card_forecast:
-    name: Forecast
+    name: Today's Forecast
     view: no
     entities:
       - sensor.forecast_today
