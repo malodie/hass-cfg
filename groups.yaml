@@ -31,6 +31,7 @@
       - sensor.weather_humidity
   weather_tomorrow:
     name: Tomorrow's Weather
+    entities:
       - sensor.weather_summary
       - sensor.weather_daily_high_temperature_1
       - sensor.weather_daily_low_temperature_1
@@ -38,14 +39,18 @@
       - sensor.weather_humidity_1
   guest_lights:
     name: Guest Lights
+    entities:
       - light.guest_room
   living_room_lights:
     name: Living Room Lights
+    entities:
       - light.living_room
   office_lights:
     name: Office Lights
+    entities:
       - light.office
       - switch.string_lights
   vacuums:
     name: Vacuums
+    entities:
       - vacuum.morty
