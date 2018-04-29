@@ -1,7 +1,8 @@
 # Change the scene at sunset
-  - alias: "Sunset Mood Lighting"
+  - id: anystring
+    alias: "Sunset Mood Lighting"
     trigger:
-      platform: sun
+    - platform: sun
       event: sunset
       offset: '+00:00:00'
     condition:
@@ -14,9 +15,10 @@
           group_name: "Office"
           scene_name: "Read"
 # Change the scene at sunset
-  - alias: "Sunrise Mood Lighting"
+  - id: anyotherstring
+    alias: "Sunrise Mood Lighting"
     trigger:
-      platform: sun
+    - platform: sun
       event: sunrise
       offset: '+00:00:00'
     condition:
