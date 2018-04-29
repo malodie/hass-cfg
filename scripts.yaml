@@ -1,6 +1,0 @@
-  sunset_office:
-    sequence:
-      - service: hue.hue_activate_scene
-        data:
-          group_name: "Office"
-          scene_name: "Read"

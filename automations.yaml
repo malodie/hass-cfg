@@ -1,8 +1,30 @@
-[
-# Light temperature
-# Trigger: Time and lights are on
-# Condition: Is after sunset
-# Action: Change light temperature
-
-
-]
+# Change the scene at sunset
+  - alias: "Sunset Mood Lighting"
+    trigger:
+      platform: sun
+      event: sunset
+      offset: '+00:00:00'
+    condition:
+    - condition: state
+      entity_id: 'group.office_lights'
+      state: 'on'
+    action:
+      - service: hue.hue_activate_scene
+        data:
+          group_name: "Office"
+          scene_name: "Read"
+# Change the scene at sunset
+  - alias: "Sunrise Mood Lighting"
+    trigger:
+      platform: sun
+      event: sunrise
+      offset: '+00:00:00'
+    condition:
+    - condition: state
+      entity_id: 'group.office_lights'
+      state: 'on'
+    action:
+      - service: hue.hue_activate_scene
+        data:
+          group_name: "Office"
+          scene_name: "Concentrate"

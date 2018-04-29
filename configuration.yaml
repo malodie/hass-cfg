@@ -17,6 +17,7 @@ frontend:
 config:
 http:
 history:
+sun:
 logbook:
 cloud: !include clouds.yaml
 
@@ -45,7 +46,7 @@ hue:
     - host: !secret hue_ip
       allow_unreachable: true
       allow_hue_groups: true
-      
+
 media_player:
   - platform: cast
     host: !secret cast_ip
