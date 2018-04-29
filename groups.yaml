@@ -46,3 +46,6 @@
     name: Office Lights
       - light.office
       - switch.string_lights
+  vacuums:
+    name: Vacuums
+      - vacuum.morty

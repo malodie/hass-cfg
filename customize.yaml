@@ -26,5 +26,9 @@ sensor.template_mal_calendar:
 calendar.malloryquaintancegmailcom: {}
 sensor.template_calendar_house:
   icon: mdi:calendar
-group.weather_card_forecast:
-  friendly_name: Forecast
+group.guest_lights:
+  friendly_name: Guest Room Lights
+group.living_room_lights:
+  friendly_name: Living Room Lights
+group.office_lights:
+  friendly_name: Office Lights
