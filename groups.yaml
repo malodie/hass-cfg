@@ -1,3 +1,18 @@
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.mail
+      - group.pihole
+      - group.calendars_custom
+      - group.pihole_custom
+      - group.current_temperature
+      - group.weather_today
+      - group.weather_tomorrow
+      - group.guest_lights
+      - group.living_room_lights
+      - group.office_lights
+      - group.vacuums
   mail:
     name: Mail
     entities:

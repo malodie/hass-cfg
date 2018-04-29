@@ -1,1 +1,8 @@
-[]
+[
+# Light temperature
+# Trigger: Time and lights are on
+# Condition: Is after sunset
+# Action: Change light temperature
+
+
+]
