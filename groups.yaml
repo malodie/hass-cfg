@@ -17,9 +17,22 @@
     name: Pi 2 Status
     entities:
       - sensor.template_pi_2
-  weather_card_forecast:
-    name: Today's Forecast
-    view: no
+  current_temperature:
+    name: Current temperature
     entities:
-      - sensor.forecast_today
-      - sensor.forecast_1
+      - sensor.weather_temperature
+  weather_today:
+    name: Today's Weather
+    entities:
+      - sensor.weather_daily_summary
+      - sensor.weather_daily_high_temperature
+      - sensor.weather_daily_low_temperature
+      - sensor.weather_precip_probability
+      - sensor.weather_humidity
+  weather_tomorrow:
+    name: Tomorrow's Weather
+      - sensor.weather_summary
+      - sensor.weather_daily_high_temperature_1
+      - sensor.weather_daily_low_temperature_1
+      - sensor.weather_precip_probability_1
+      - sensor.weather_humidity_1
