@@ -18,7 +18,7 @@
     entities:
       - sensor.template_pi_2
   current_temperature:
-    name: Current temperature
+    name: Current Temperature
     entities:
       - sensor.weather_temperature
   weather_today:
@@ -36,3 +36,13 @@
       - sensor.weather_daily_low_temperature_1
       - sensor.weather_precip_probability_1
       - sensor.weather_humidity_1
+  guest_lights:
+    name: Guest Lights
+      - light.guest_room
+  living_room_lights:
+    name: Living Room Lights
+      - light.living_room
+  office_lights:
+    name: Office Lights
+      - light.office
+      - switch.string_lights
