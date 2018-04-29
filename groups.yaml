@@ -1,8 +1,3 @@
-  mail:
-    name: Mail
-    entities:
-      - sensor.fedex
-      - sensor.ups
   pihole:
     name: Pihole
     entities:
