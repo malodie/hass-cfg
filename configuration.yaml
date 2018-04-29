@@ -43,7 +43,9 @@ neato:
 hue:
   bridges:
     - host: !secret hue_ip
-
+      allow_unreachable: true
+      allow_hue_groups: true
+      
 media_player:
   - platform: cast
     host: !secret cast_ip
