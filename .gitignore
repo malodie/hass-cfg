@@ -10,3 +10,5 @@
 !cameras.yaml
 !clouds.yaml
 !weather.yaml
+!discover_scenes.py
+!scenes.yaml
