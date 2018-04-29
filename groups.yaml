@@ -45,6 +45,7 @@
     name: Living Room Lights
     entities:
       - light.living_room
+      - light.kitchen_lamp
   office_lights:
     name: Office Lights
     entities:
