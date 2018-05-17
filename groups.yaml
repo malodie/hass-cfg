@@ -50,3 +50,11 @@
     name: Vacuums
     entities:
       - vacuum.morty
+  therm:
+    name: Thermostat
+    entities:
+      - binary_sensor.downstairs_thermostat_fan
+      - binary_sensor.downstairs_thermostat_has_leaf
+      - binary_sensor.downstairs_thermostat_is_locked
+      - binary_sensor.downstairs_thermostat_is_using_emergency_heat
+      - binary_sensor.downstairs_thermostat_online
