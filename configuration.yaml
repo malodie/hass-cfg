@@ -56,6 +56,10 @@ notify:
     platform: pushbullet
     api_key: !secret pushbullet_api
 
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+
 sensor: !include sensors.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
