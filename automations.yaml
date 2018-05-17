@@ -1,30 +1,28 @@
-# Change the scene at sunset
-  - id: anystring
-    alias: "Sunset Lighting"
-    trigger:
-    - platform: time
-      at: '19:00:00'
-    condition:
-    - condition: state
-      entity_id: 'group.office_lights'
-      state: 'on'
-    action:
-      - service: hue.hue_activate_scene
-        data:
-          group_name: "Office"
-          scene_name: "Read"
-# Change the scene at sunset
-  - id: anyotherstring
-    alias: "Sunrise Lighting"
-    trigger:
-    - platform: time
-      at: '06:00:00'
-    condition:
-    - condition: state
-      entity_id: 'group.office_lights'
-      state: 'on'
-    action:
-      - service: hue.hue_activate_scene
-        data:
-          group_name: "Office"
-          scene_name: "Concentrate"
+- id: officesunset
+  alias: Sunset Lighting - Office
+  trigger:
+  - at: '20:30:00'
+    platform: time
+  condition:
+  - condition: state
+    entity_id: light.hue_color_lamp_4
+    state: 'on'
+  action:
+  - data:
+      group_name: Office
+      scene_name: Read
+    service: hue.hue_activate_scene
+- id: officesunrise
+  alias: Sunrise Lighting - Office
+  trigger:
+  - at: 08:00:00
+    platform: time
+  condition:
+  - condition: state
+    entity_id: light.hue_color_lamp_4
+    state: 'on'
+  action:
+  - data:
+      group_name: Office
+      scene_name: Concentrate
+    service: hue.hue_activate_scene
