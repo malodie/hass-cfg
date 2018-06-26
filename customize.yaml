@@ -12,3 +12,8 @@ sensor.ups:
   friendly_name: UPS
 group.mail: {}
 calendar.malloryquaintancegmailcom: {}
+binary_sensor.downstairs_thermostat_is_using_emergency_heat:
+  hidden: true
+group.automations_tab: {}
+group.all_lights: {}
+group.all_automations: {}

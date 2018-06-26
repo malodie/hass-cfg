@@ -14,6 +14,7 @@ homeassistant:
   customize: !include customize.yaml
 
 frontend:
+  themes: !include_dir_merge_named themes
 config:
 http:
 history:
@@ -21,11 +22,14 @@ sun:
 logbook:
 cloud: !include clouds.yaml
 
-# panel_custom:
-#   -name:
-#     title: Upcoming Events
-#     icon: mdi:calendar
-#     url: http://192.168.1.32:3218
+input_select:
+  office_scene:
+    name: Scene
+    options:
+      - Daytime
+      - Evening
+    initial: 'Daytime'
+    icon: mdi:palette
 
 switch:
   - platform: tplink

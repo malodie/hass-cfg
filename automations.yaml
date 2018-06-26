@@ -1,28 +1,11 @@
-- id: officesunset
-  alias: Sunset Lighting - Office
+- id: '1526693224221'
+  alias: Office Scenes
   trigger:
-  - at: '20:30:00'
-    platform: time
-  condition:
-  - condition: state
-    entity_id: light.hue_color_lamp_4
-    state: 'on'
+  - entity_id: input_select.office_scene
+    platform: state
+  condition: []
   action:
-  - data:
+  - service: hue.hue_activate_scene
+    data_template:
       group_name: Office
-      scene_name: Read
-    service: hue.hue_activate_scene
-- id: officesunrise
-  alias: Sunrise Lighting - Office
-  trigger:
-  - at: 08:00:00
-    platform: time
-  condition:
-  - condition: state
-    entity_id: light.hue_color_lamp_4
-    state: 'on'
-  action:
-  - data:
-      group_name: Office
-      scene_name: Concentrate
-    service: hue.hue_activate_scene
+      scene_name: '{{ states.input_select.office_scene.state }}'
