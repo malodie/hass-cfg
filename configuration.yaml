@@ -32,6 +32,13 @@ input_select:
       - Evening
     initial: 'Daytime'
     icon: mdi:palette
+  lr_scene:
+    name: Scene
+    options:
+      - Daytime
+      - Evening
+    initial: 'Daytime'
+    icon: mdi:palette
 
 switch:
   - platform: tplink
