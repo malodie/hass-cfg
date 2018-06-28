@@ -22,6 +22,8 @@ sun:
 logbook:
 cloud: !include clouds.yaml
 
+discovery:
+
 input_select:
   office_scene:
     name: Scene
@@ -45,15 +47,15 @@ neato:
   username: !secret neato_user
   password: !secret neato_pass
 
-hue:
-  bridges:
-    - host: !secret hue_ip
-      allow_unreachable: true
-      allow_hue_groups: true
+# hue:
+#   bridges:
+#     - host: !secret hue_ip
+#       allow_unreachable: true
+#       allow_hue_groups: true
 
-cast:
-  media_player:
-  - host: !secret cast_ip
+# cast:
+#   media_player:
+#   - host: !secret cast_ip
 
 notify:
   - name: test
