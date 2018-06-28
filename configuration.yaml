@@ -21,7 +21,15 @@ history:
 sun:
 logbook:
 cloud: !include clouds.yaml
-
+# Lovelace
+input_boolean:
+  switch_ac_kitchen:
+    name: AC kitchen
+  switch_ac_livingroom:
+    name: AC living room
+  switch_tv:
+    name: TV
+    
 input_select:
   office_scene:
     name: Scene
