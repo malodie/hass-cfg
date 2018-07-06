@@ -1,3 +1,6 @@
 hello_world:
   module: hello
   class: HelloWorld
+scenes:
+  module: scenes
+  class: Scenes
