@@ -1,4 +1,8 @@
 secrets: secrets.yaml
+log:
+  accessfile: /home/homeassisatnt/export/hass/appdaemon/logs/access.log
+  errorfile: /home/homeassisatnt/export/hass/appdaemon/logs/error.log
+  logfile: /home/homeassisatnt/export/hass/appdaemon/logs/appdaemon.log
 appdaemon:
   threads: 10
   plugins:
