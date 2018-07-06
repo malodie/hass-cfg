@@ -1,3 +1,4 @@
+secrets: secrets.yaml
 appdaemon:
   threads: 10
   plugins:
