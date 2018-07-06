@@ -54,6 +54,12 @@ neato:
   username: !secret neato_user
   password: !secret neato_pass
 
+device_tracker:
+  - platform: netgear
+    host: !secret router_ip
+    username: !secret router_user
+    password: !secret router_pass
+
 # hue:
 #   bridges:
 #     - host: !secret hue_ip
