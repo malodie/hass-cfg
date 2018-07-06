@@ -22,8 +22,6 @@ sun:
 logbook:
 cloud: !include clouds.yaml
 
-discovery:
-
 input_select:
   office_scene:
     name: Scene
@@ -32,6 +30,8 @@ input_select:
       - Evening
     initial: 'Daytime'
     icon: mdi:palette
+    
+input_select:
   lr_scene:
     name: Scene
     options:
