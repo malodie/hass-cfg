@@ -3,9 +3,9 @@ import appdaemon.plugins.hass.hassapi as hass
 class Scenes(hass.Hass):
 
   def initialize(self):
-      location = self.args['location']
-      selector = self.args['selector']
-      self.listen_state(self.scene_change, selector, location)
+      self.location = self.args['location']
+      self.selector = self.args['selector']
+      self.listen_state(self.scene_change, self.selector)
 
   def scene_change(self, entity, attribute, old, new, kwargs):
       option = self.get_state("input_select.office_scene")
