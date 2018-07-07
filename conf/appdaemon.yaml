@@ -1,0 +1,12 @@
+secrets: /home/homeassistant/.homeassistant/secrets.yaml
+log:
+  accessfile: /home/homeassistant/export/hass/appdaemon/logs/access.log
+  errorfile: /home/homeassistant/export/hass/appdaemon/logs/error.log
+  logfile: /home/homeassistant/export/hass/appdaemon/logs/appdaemon.log
+  diagfile: /home/homeassistant/export/hass/appdaemon/logs/diagnostic.log
+appdaemon:
+  threads: 10
+  plugins:
+    HASS:
+      type: hass
+      ha_url: !secret hass_url
