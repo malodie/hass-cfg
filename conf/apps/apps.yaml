@@ -8,7 +8,7 @@ office_scenes:
   selector: input_select.office_scene
   location: Office
 
-office_scenes:
+lr_scenes:
   module: scenes
   class: Scenes
   selector: input_select.lr_scene
