@@ -12,6 +12,5 @@
 !weather.yaml
 !discover_scenes.py
 !scenes.yaml
-!appdaemon.yaml
-!conf/apps/*
-!conf/appdaemon.yaml
+!/conf/apps/*
+!/conf/appdaemon.yaml
