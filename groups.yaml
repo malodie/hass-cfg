@@ -73,7 +73,6 @@
     entities:
       - light.living_room
       - light.kitchen_lamp
-      - input_select.lr_scene
   office_lights:
     name: Office Lights
     entities:
