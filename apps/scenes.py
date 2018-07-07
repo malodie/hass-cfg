@@ -16,4 +16,5 @@ class Scenes(hass.Hass):
       option = self.get_state("input_select.office_scene")
       self.log(option)
       self.log("Okay, we also got the change")
-      self.call_service(self, hue.hue_activate_scene, group_name = "Office", scene_name = option)
+      outputting = self.call_service(self, hue.hue_activate_scene, group_name = "Office", scene_name = option)
+      self.log(outputting)
