@@ -12,4 +12,4 @@ lr_scenes:
   module: scenes
   class: Scenes
   selector: input_select.lr_scene
-  location: Living Room
+  location: Living room
