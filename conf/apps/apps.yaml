@@ -7,3 +7,9 @@ office_scenes:
   class: Scenes
   selector: input_select.office_scene
   location: Office
+
+office_scenes:
+  module: scenes
+  class: Scenes
+  selector: input_select.lr_scene
+  location: Living Room
