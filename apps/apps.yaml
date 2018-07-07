@@ -1,9 +1,0 @@
-hello_world:
-  module: hello
-  class: HelloWorld
-
-office_scenes:
-  module: scenes
-  class: Scenes
-  selector: input_select.office_scene
-  location: Office
