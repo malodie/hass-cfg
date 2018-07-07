@@ -14,7 +14,7 @@ class Scenes(hass.Hass):
       self.log("Aww yiss")
       self.log(select)
       self.log(loc)
-      self.listen_state(self.scene_change, self.args["selector"])
+      self.listen_state(self.scene_change, "input_select.office_scene")
 
   def scene_change(self, entity, attribute, old, new):
       self.log(select)
