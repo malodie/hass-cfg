@@ -13,4 +13,5 @@
 !discover_scenes.py
 !scenes.yaml
 !appdaemon.yaml
-!/conf/*
+!conf/apps/*
+!conf/appdaemon.yaml
