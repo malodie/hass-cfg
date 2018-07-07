@@ -14,9 +14,9 @@ class Scenes(hass.Hass):
       self.log("Aww yiss")
       self.log(select)
       self.log(loc)
-      self.listen_state(self.scene_change, select)
+      self.listen_state(self.scene_change, self.args["selector"])
 
-  def scene_change(self, entity, attribute, old, new, select, loc):
-      option = self.get_state(select)
+  def scene_change(self, entity, attribute, old, new):
+      option = self.get_state(self.args["selector"])
       self.log("Changing the light temp.")
-      self.call_service("hue/hue_activate_scene", group_name = loc, scene_name = option)
+      self.call_service("hue/hue_activate_scene", group_name = self.args["location"], scene_name = option)
