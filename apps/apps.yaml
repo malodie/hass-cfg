@@ -1,7 +1,15 @@
 hello_world:
   module: hello
   class: HelloWorld
-  
-scenes:
+
+lr_scenes:
   module: scenes
   class: Scenes
+  selector: input_select.lr_scene
+  location: Living Room
+
+office_scenes:
+  module: scenes
+  class: Scenes
+  selector: input_select.office_scene
+  location: Office
