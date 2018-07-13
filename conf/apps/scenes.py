@@ -5,6 +5,8 @@ class Scenes(hass.Hass):
   def initialize(self):
       self.location = self.args['location']
       self.selector = self.args['selector']
+      self.log(self.location)
+      self.log(self.selector)
       self.listen_state(self.scene_change, self.selector)
 
   def scene_change(self, entity, attribute, old, new, kwargs):
