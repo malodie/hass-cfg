@@ -33,9 +33,9 @@ input_select:
   lr_scene:
     name: Scene
     options:
-      - Daytime
-      - Evening
-    initial: 'Daytime'
+      - Day
+      - Night
+    initial: 'Day'
     icon: mdi:palette
 
 switch:
