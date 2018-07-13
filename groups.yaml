@@ -34,8 +34,6 @@
     name: Pihole
     entities:
       - sensor.pihole_ads_blocked_today
-      - sensor.pihole_ads_percentage_blocked_today
-      - sensor.pihole_dns_queries_today
   calendars_custom:
     name: Events
     entities:
