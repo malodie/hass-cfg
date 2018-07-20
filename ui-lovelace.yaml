@@ -44,3 +44,13 @@ views:
           - light.office
           - switch.string_lights
           - input_select.office_scene
+      - type: entities
+        title: Entry Lights
+        entities:
+          - light.office
+          - light.entry
+      - type: entities
+        title: Guest Lights
+        entities:
+          - light.guest_room
+          
