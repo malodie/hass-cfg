@@ -1,11 +1,10 @@
-name: Home
+title: Home
 views:
-- cards:
-  - card_config:
-      title: All Entities
-    filter:
-    - {}
-    type: entity-filter
-  name: All Entities
-  tab_icon: mdi:settings
-
+  - icon: mdi:home-assistant
+    id: home
+    # Name of the view. Will be used as the tooltip for tab icon
+    title: Home
+    cards:
+      - type: entities
+        entities:
+          - light.alex
