@@ -10,6 +10,6 @@ class Scenes(hass.Hass):
       self.listen_state(self.scene_change, self.selector)
 
   def scene_change(self, entity, attribute, old, new, kwargs):
-      option = self.get_state("input_select.office_scene")
+      option = self.get_state(self.selector)
       self.log("Changing the light temp.")
       self.call_service("hue/hue_activate_scene", group_name = self.location, scene_name = option)
