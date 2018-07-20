@@ -50,6 +50,9 @@ views:
         title: Guest Lights
         entities:
           - light.guest_room
+  - icon: mdi:play-circle
+    id: media
+    title: Media
   - icon: mdi:tablet-cellphone
     id: tablet
     title: Tablet
