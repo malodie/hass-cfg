@@ -4,7 +4,17 @@ views:
     id: home
     # Name of the view. Will be used as the tooltip for tab icon
     title: Home
+    theme: dark-mode
     cards:
+      - type: entity-filter
+        entities:
+          - device_tracker.galaxys9
+          - device_tracker.samsungsmg930v
+        state_filter:
+          - 'home'
+        card:
+          type: glance
+          title: Home
       - type: entities
         title: Entity card
         entities:
