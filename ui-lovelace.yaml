@@ -13,7 +13,7 @@ views:
     title: Entity card
     type: entities
   - {entity: camera.morty_cleaning_map, type: picture-entity}
-  - entities: [binary_sensor.downstairs_thermostat_online, calendar.malloryquaintancegmailcom]
+  - entities: [binary_sensor.downstairs_thermostat_online, calendar.malloryquaintancegmailcom, sensor.ups]
     type: glance
   - {entity: media_player.tv, type: media-control}
   icon: mdi:home-assistant
@@ -35,9 +35,27 @@ views:
   icon: mdi:lightbulb
   id: lights
   title: Lights
-- {icon: 'mdi:play-circle', id: media, title: Media}
-- {icon: 'mdi:thermometer', id: climate, title: Climate}
-- {icon: 'mdi:weather-lightning-rainy', id: weather, title: Weather}
+- cards:
+  - entities: [sensor.weather_temperature]
+    title: Weather Placeholder
+    type: entities
+  icon: mdi:play-circle
+  id: media
+  title: Media
+- cards:
+  - entities: [sensor.weather_temperature]
+    title: Weather Placeholder
+    type: entities
+  icon: mdi:thermometer
+  id: climate
+  title: Climate
+- cards:
+  - entities: [sensor.weather_temperature]
+    title: Weather Placeholder
+    type: entities
+  icon: mdi:weather-lightning-rainy
+  id: weather
+  title: Weather
 - cards:
   - entities: [light.living_room, input_select.lr_scene]
     title: Living Room Lights
