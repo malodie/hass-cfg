@@ -6,5 +6,15 @@ views:
     title: Home
     cards:
       - type: entities
+        title: Entity card
         entities:
           - light.alex
+          - binary_sensor.downstairs_thermostat_has_leaf
+      - type: camera-preview
+        entity: camera.morty_cleaning_map
+      - type: glance
+        entities:
+          - binary_sensor.downstairs_thermostat_online
+          - calendar.malloryquaintancegmailcom
+      - type: media-control
+        entity: media_player.tv
