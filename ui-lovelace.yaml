@@ -28,3 +28,14 @@ views:
           - calendar.malloryquaintancegmailcom
       - type: media-control
         entity: media_player.tv
+    - icon: mdi:lightbulb
+      id: lights
+      title: Lights
+      theme: dark-mode
+      cards:
+        - type: entities
+          title: Living Room Lights
+          entities:
+            - light.living_room
+            - light.kitchen_lamp
+            - input_select.lr_scene
