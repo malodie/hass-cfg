@@ -13,3 +13,4 @@
 !discover_scenes.py
 !scenes.yaml
 !/conf/*
+!ui-lovelace.yaml
