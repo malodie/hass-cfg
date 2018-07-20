@@ -36,5 +36,5 @@ views:
       - type: entities
         title: Living Room Lights
         entities:
-          - group.living_room_lights
+          - light.living_room
           - input_select.lr_scene
