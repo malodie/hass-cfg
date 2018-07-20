@@ -14,7 +14,6 @@ homeassistant:
   customize: !include customize.yaml
 
 frontend:
-  themes: !include_dir_merge_named themes
 config:
 http:
 history:
@@ -57,16 +56,6 @@ device_tracker:
     host: !secret router_ip
     username: !secret router_user
     password: !secret router_pass
-
-# hue:
-#   bridges:
-#     - host: !secret hue_ip
-#       allow_unreachable: true
-#       allow_hue_groups: true
-
-# cast:
-#   media_player:
-#   - host: !secret cast_ip
 
 notify:
   - name: test

@@ -14,3 +14,4 @@
 !scenes.yaml
 !/conf/*
 !ui-lovelace.yaml
+!/lovelace/*
