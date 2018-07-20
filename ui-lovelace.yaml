@@ -36,7 +36,5 @@ views:
       - type: entities
         title: Living Room Lights
         entities:
-          - light.hue_color_lamp_1
-          - light.hue_color_lamp_2
-          - light.hue_color_lamp_3
+          - group.living_room_lights
           - input_select.lr_scene

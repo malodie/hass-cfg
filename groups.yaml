@@ -71,13 +71,11 @@
     entities:
       - light.living_room
       - light.kitchen_lamp
-      - input_select.lr_scene
   office_lights:
     name: Office Lights
     entities:
       - light.office
       - switch.string_lights
-      - input_select.office_scene
   vacuums:
     name: Vacuums
     entities:
