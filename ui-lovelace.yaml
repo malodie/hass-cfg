@@ -38,3 +38,9 @@ views:
         entities:
           - light.living_room
           - input_select.lr_scene
+      - type: entities
+        title: Office Lights
+        entities:
+          - light.office
+          - switch.string_lights
+          - input_select.office_scene
