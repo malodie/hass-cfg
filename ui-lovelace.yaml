@@ -4,7 +4,6 @@ views:
     id: home
     # Name of the view. Will be used as the tooltip for tab icon
     title: Home
-    theme: dark-mode
     cards:
       - type: entity-filter
         entities:
@@ -31,7 +30,29 @@ views:
   - icon: mdi:lightbulb
     id: lights
     title: Lights
-    theme: dark-mode
+    cards:
+      - type: entities
+        title: Living Room Lights
+        entities:
+          - light.living_room
+          - input_select.lr_scene
+      - type: entities
+        title: Office Lights
+        entities:
+          - light.office
+          - switch.string_lights
+          - input_select.office_scene
+      - type: entities
+        title: Entry Lights
+        entities:
+          - light.entry
+      - type: entities
+        title: Guest Lights
+        entities:
+          - light.guest_room
+  - icon: mdi:tablet-cellphone
+    id: tablet
+    title: Tablet
     cards:
       - type: entities
         title: Living Room Lights
