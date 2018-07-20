@@ -53,6 +53,12 @@ views:
   - icon: mdi:play-circle
     id: media
     title: Media
+  - icon: mdi:thermometer
+    id: climate
+    title: Climate
+  - icon: mdi:weather-lightning-rainy
+    id: weather
+    title: Weather
   - icon: mdi:tablet-cellphone
     id: tablet
     title: Tablet
