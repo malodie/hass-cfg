@@ -1,35 +1,35 @@
-  default_view:
-    view: yes
-    icon: mdi:home
-    entities:
-      - group.pihole
-      - group.calendars_custom
-      - group.guest_lights
-      - group.office_lights
-      - media_player.tv
-      - group.current_temperature
-      - group.living_room_lights
-      - climate.downstairs
-      - group.vacuums
-  weather_tab:
-    view: yes
-    name: Weather
-    entities:
-      - group.weather_today
-      - group.weather_tomorrow
-      - group.current_temperature
-      - camera.radar
-  automations_tab:
-    view: yes
-    name: Automations
-    entities:
-      - group.all_automations
-  misc_tab:
-    view: yes
-    name: Misc
-    entities:
-      - group.all_lights
-      - group.therm
+  # default_view:
+  #   view: yes
+  #   icon: mdi:home
+  #   entities:
+  #     - group.pihole
+  #     - group.calendars_custom
+  #     - group.guest_lights
+  #     - group.office_lights
+  #     - media_player.tv
+  #     - group.current_temperature
+  #     - group.living_room_lights
+  #     - climate.downstairs
+  #     - group.vacuums
+  # weather_tab:
+  #   view: yes
+  #   name: Weather
+  #   entities:
+  #     - group.weather_today
+  #     - group.weather_tomorrow
+  #     - group.current_temperature
+  #     - camera.radar
+  # automations_tab:
+  #   view: yes
+  #   name: Automations
+  #   entities:
+  #     - group.all_automations
+  # misc_tab:
+  #   view: yes
+  #   name: Misc
+  #   entities:
+  #     - group.all_lights
+  #     - group.therm
   pihole:
     name: Pihole
     entities:
